@@ -12,7 +12,7 @@ const getReportedPosts = () => {
 };
 
 const isLiked = (id) => {
-    return likedPostsId.length && !!likedPostsId.includes(id);
+    return likedPostsId?.length && !!likedPostsId.includes(id);
 };
 
 const addToLiked = (id) => {
@@ -158,10 +158,11 @@ const displayReportedPosts = () => {
     });
 };
 
-const loadPosts = async() => {
+const loadPosts = async () => {
     let data = await fetch('../data/posts.json');
     posts = await data.json();
     showPosts(posts);
 }
 
 loadPosts();
+

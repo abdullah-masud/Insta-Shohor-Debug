@@ -60,7 +60,9 @@
     </main>
 
     <!-- Queuestion And Answers -->
-    <section class="container my-5">
+
+    <section id="question-answer" class="container my-5">
+        <h3>Question and Answers</h3>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -74,10 +76,10 @@
                     <div class="accordion-body">
                         The v8 engine is used to run JavaScript in the browser. When a browser gets JavaScript source
                         code, the code is parsed into several syntax trees.
-                        JavaScript is an interpreted language, the code is performed line by line. When the code is
-                        executed line by line, the v8 engine uses Just In Time Compiler to execute the code, allowing
-                        it to run more rapidly and efficiently. Later, the code is optimized to byte code (machine
-                        code), which is understandable by computers.
+                        JavaScript is a synchronous single-threaded interpreted language which means, the code is
+                        performed line by line. When the code is executed line by line, the v8 engine uses Just In Time
+                        Compiler to execute the code, allowing it to run more rapidly and efficiently. Later, the code
+                        is optimized to byte code (machine code), which is understandable by computers.
                     </div>
                 </div>
             </div>
@@ -111,12 +113,12 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        Data is stored in key-value pairs in both local and session storage. The data is stored locally
+                        only on your computer. Both local and session storage can only be read on client side.
+                        The main difference between these two is that local storage data is saved on your computer
+                        permanently. Even if you close Chrome or turn off your computer, it will not expire.
+                        Session storage data isn't saved permanently,when you close Chrome or switch off your computer,
+                        session storage data is removed.
                     </div>
                 </div>
             </div>

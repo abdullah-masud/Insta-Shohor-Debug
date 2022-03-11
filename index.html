@@ -78,8 +78,8 @@
                         code, the code is parsed into several syntax trees.
                         JavaScript is a synchronous single-threaded interpreted language which means, the code is
                         performed line by line. When the code is executed line by line, the v8 engine uses Just In Time
-                        Compiler to execute the code, allowing it to run more rapidly and efficiently. Later, the code
-                        is optimized to byte code (machine code), which is understandable by computers.
+                        Compiler(JIT) to execute the code, allowing it to run more rapidly and efficiently. Later, the
+                        code is optimized to byte code (machine code), which is understandable by computers.
                     </div>
                 </div>
             </div>
@@ -95,8 +95,8 @@
                     <div class="accordion-body">
                         The JavaScript code runs in a loop which is known as event loop. In an event loop, there are
                         three elements: a heap, which is an unstructured memory, a Queue (First in First Out), and a
-                        Stack(Last in First Out).
-                        The synchronous code is kept in a stack and executed line by line. If there is any asynchronous
+                        Stack(Last in First Out). javascript is synchronous by default.
+                        The synchronous code is kept in a stack and executes line by line. If there is any asynchronous
                         code in the middle, it will be relocated to Queue, and once all the synchronous code has been
                         executed, the asynchronous code in Queue will be called to run. The first asynchronous code
                         which went to the Queue will execute first and continue untill the Queue is emptied.
